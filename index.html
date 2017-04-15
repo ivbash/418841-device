@@ -6,8 +6,121 @@
 	</head>
 	<body>
 		<header class="index-header">
+			<a class="logo" href="#">Device</a>
+
+			<!-- Первая строка меню -->
+			<div class="user-menu">
+				<form class="search" action="#" method="get">
+					<input type="text" placeholder="Поиск по сайту">
+					<input type="submit" value="Найти">
+				</form>
+				<div class="half-right">
+					<div class="user-block">
+						<a href="#">Войти</a>
+					</div>
+					<div class="float-right">
+						<a href="#">Сравнить</a>
+						<a href="#">Корзина</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Вторая строка меню -->
+			<nav class="header-menu">
+				<nav class="catalog-items">
+					<a href="#">Каталог товаров</a>
+					<ul>
+						<li>
+							<a href="#">Виртуальная реальность</a>
+							<a href="#">Моноподы для селфи</a>
+							<a href="#">Экшн-камеры</a>
+						</li>
+						<li>
+							<a href="#">Фитнес-браслеты</a>
+							<a href="#">Умные часы</a>
+						</li>
+						<li>
+							<a href="#">Квадрокоптеры</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="half-right">
+					<a href="#">Доставка</a>
+					<a href="#">Гарантия</a>
+					<a class="float-right" href="#">Контакты</a>
+				</div>
+			</nav>
+			
+			<!-- Переключатель слайдов -->
+			<div class="slider-indicators">
+				<a href="#slide-1">1</a>
+				<a href="#slide-2">2</a>
+				<a href="#slide-3">3</a>
+			</div>
+
+			<!-- Первый слайд -->
+			<div id="slide-1" class="slide">
+				<div class="content-left">
+					<img src="#" alt="Селфи-палка">
+				</div>
+				<div class="content-right">
+					<h2>Делай селфи, как Бен Стиллер!</h2>
+					<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+					<a class="btn" href="#">Подробнее</a>
+					<div class="feature">
+						<span>8,5 м</span>
+						<p>Длина палки</p>
+					</div>
+					<div class="feature">
+						<span>5 кг</span>
+						<p>Вес палки</p>
+					</div>
+					<div class="feature">
+						<span>Карбон</span>
+						<p>Материал</p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Второй слайд -->
+			<div id="slide-2" class="slide">
+				<div class="content-left">
+					<img src="#" alt="Фитнес-браслет">
+				</div>
+				<div class="content-right">
+					<h2>Худеем правильно!</h2>
+					<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+					<a class="btn" href="#">Подробнее</a>
+					<div class="feature">
+						<span>48 часов</span>
+						<p>Без подзарядки</p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Третий слайд -->
+			<div id="slide-3" class="slide">
+				<div class="content-left">
+					<img src="#" alt="Квадрокоптер">
+				</div>
+				<div class="content-right">
+					<h2>Порхает как бабочка, жалит как пчела!</h2>
+					<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+					<a class="btn" href="#">Подробнее</a>
+					<div class="feature">
+						<span>800 м</span>
+						<p>Дальность полета</p>
+					</div>
+					<div class="feature">
+						<span>50 м</span>
+						<p>Радиус поражения</p>
+					</div>
+				</div>
+			</div>
 		</header>
+		
 		<main>
+			<!-- Блок навигации -->
 			<nav class="sections">
 				<a href="#">Виртуальная реальность</a>
 				<a href="#">Моноподы для селфи</a>
@@ -17,6 +130,7 @@
 				<a href="#">Квадрокоптеры</a>
 			</nav>
 		</main>
+		
 		<footer class="page-footer">
 		</footer>
 	</body>

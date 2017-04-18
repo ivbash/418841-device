@@ -56,14 +56,17 @@
 			<!-- Слайдер -->
 			<div class="slides-wrap">
 				<!-- Переключатель слайдов -->
-				<div class="slider-indicators">
-					<a href="#slide-1">1</a>
-					<a href="#slide-2">2</a>
-					<a href="#slide-3">3</a>
+				<input type="radio" id="slide-1" name="toggle-promo" checked>
+				<input type="radio" id="slide-2" name="toggle-promo">
+				<input type="radio" id="slide-3" name="toggle-promo">
+				<div class="slide-controls">
+					<label for="slide-1" class="indicator">1</label>
+					<label for="slide-2" class="indicator">2</label>
+					<label for="slide-3" class="indicator">3</label>
 				</div>
 
 				<!-- Первый слайд -->
-				<div id="slide-1" class="slide slide-1">
+				<div class="slide slide-1">
 					<div class="slide-img">
 						<img src="#" alt="Селфи-палка">
 					</div>
@@ -89,7 +92,7 @@
 				</div>
 
 				<!-- Второй слайд -->
-				<div id="slide-2" class="slide slide-2">
+				<div class="slide slide-2">
 					<div class="slide-img">
 						<img src="#" alt="Фитнес-браслет">
 					</div>
@@ -107,7 +110,7 @@
 				</div>
 
 				<!-- Третий слайд -->
-				<div id="slide-3" class="slide slide-3">
+				<div class="slide slide-3">
 					<div class="slide-img">
 						<img src="#" alt="Квадрокоптер">
 					</div>
@@ -144,45 +147,42 @@
 			<!-- Сервисы -->
 			<section class="services-slides-wrap">
 				<!-- Переключатель слайдов -->
-				<ul class="slide-menu">
-					<li class="slide-menu-item">
-						<a class="btn" href="#slide-delivery">Доставка</a>
-					</li>
-					<li class="slide-menu-item">
-						<a class="btn" href="#slide-warranty">Гарантия</a>
-					</li>
-					<li class="slide-menu-item">
-						<a class="btn" href="#slide-credit">Кредит</a>
-					</li>
-				</ul>
+				<input type="radio" id="delivery" name="toggle-services" checked>
+				<input type="radio" id="warranty" name="toggle-services">
+				<input type="radio" id="credit" name="toggle-services">
+				<div class="slide-controls">
+					<label for="delivery" class="btn">Доставка</label>
+					<label for="warranty" class="btn">Гарантия</label>
+					<label for="credit" class="btn">Кредит</label>
+				</div>
 
 				<!-- Слайд доставки -->
-				<div id="slide-delivery" class="slide-delivery">
+				<div class="slide-delivery">
 					<h2 class="slide-title">Доставка</h2>
 					<p class="slide-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
 				</div>
-				
+
 				<!-- Слайд гарантии -->
-				<div id="slide-warranty" class="slide-warranty">
+				<div class="slide-warranty">
 					<h2 class="slide-title">Гарантия</h2>
 					<p class="slide-description">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
 				</div>
-				
+
 				<!-- Слайд кредита -->
-				<div id="slide-credit" class="slide-credit">
+				<div class="slide-credit">
 					<h2 class="slide-title">Кредит</h2>
 					<p class="slide-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
 				</div>
 			</section>
-			
+
 			<!-- Логотипы компаний -->
-			<section class="logotypes">
-				<a class="logo-dji" href="#">DJI</a>
-				<a class="logo-spgadgets" href="#">SP Gadgets</a>
-				<a class="logo-gopro" href="#">GoPro</a>
-				<a class="logo-vive" href="#">Vive</a>
+			<section class="trademarks">
+				<a class="trademarks-item dji" href="#">DJI</a>
+				<a class="trademarks-item spgadgets" href="#">SP Gadgets</a>
+				<a class="trademarks-item gopro" href="#">GoPro</a>
+				<a class="trademarks-item vive" href="#">Vive</a>
 			</section>
-			
+
 			<!-- Контактная информация -->
 			<section class="company">
 				<!-- Блок "О нас" -->
@@ -197,7 +197,7 @@
 					</ul>
 					<a class="btn" href="#">Подробнее о нас</a>
 				</div>
-				
+
 				<!-- Блок "Контакты" -->
 				<div class="contacts">
 					<h2>Контакты</h2>
@@ -211,49 +211,72 @@
 		</main>
 
 		<footer class="page-footer">
-			<div class="footer-contacts">
+			<!-- Первая строка -->
+			<div class="footer-row">
 				<a class="footer-logo">Device</a>
-				<p>г. Москва, ул. Строителей, 15</p>
-				<p>Тел.: +7 (495) 495-95-95</p>
+				<ul class="footer-user-menu">
+					<li class="footer-user-item">
+						<a href="#">Войти</a>
+					</li>
+					<li class="footer-user-item">
+						<a href="#">Сравнить</a>
+					</li>
+					<li class="footer-user-item">
+						<a href="#">Корзина</a>
+					</li>
+				</ul>
 			</div>
-			
-			<ul class="user-menu-footer">
-				<li class="user-item-footer">
-					<a href="#">Войти</a>
-				</li>
-				<li class="user-item-footer">
-					<a href="#">Сравнить</a>
-				</li>
-				<li class="user-item-footer">
-					<a href="#">Корзина</a>
-				</li>
-			</ul>
-			
-			<ul class="footer-services-list">
-				<li class="footer-services-item">
-					<a href="#">Доставка</a>
-				</li>
-				<li class="footer-services-item">
-					<a href="#">Гарантия</a>
-				</li>
-				<li class="footer-services-item">
-					<a href="#">Контакты</a>
-				</li>
-			</ul>
-			
-			<ul class="social-list">
-				<li class="social-item">
-					<a class="social-btn social-fb" href="#">Facebook</a>
-				</li>
-				<li class="social-item">
-					<a class="social-btn social-inst" href="#">Instagram</a>
-				</li>
-				<li class="social-item">
-					<a class="social-btn social-twitter" href="#">Twitter</a>
-				</li>
-			</ul>
-			
-			<a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+
+			<!-- Вторая строка -->
+			<div class="footer-row">
+				<p class="address">г. Москва, ул. Строителей, 15</p>
+				<ul class="footer-services-list">
+					<li class="footer-services-item">
+						<a href="#">Доставка</a>
+					</li>
+					<li class="footer-services-item">
+						<a href="#">Гарантия</a>
+					</li>
+					<li class="footer-services-item">
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+				<p class="tel">Тел.: +7 (495) 495-95-95</p>
+			</div>
+
+			<!-- Третья строка -->
+			<div class="footer-row">
+				<ul class="social-list">
+					<li class="social-item">
+						<a class="social-btn social-fb" href="#">Facebook</a>
+					</li>
+					<li class="social-item">
+						<a class="social-btn social-inst" href="#">Instagram</a>
+					</li>
+					<li class="social-item">
+						<a class="social-btn social-twitter" href="#">Twitter</a>
+					</li>
+				</ul>
+				<a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+			</div>
 		</footer>
+
+		<!-- Всплывающие окна -->
+		<div class="popup-map">
+			<input type="button" value="Закрыть">
+			<img src="#" alt="Карта">
+		</div>
+		<div class="popup-write-us">
+			<form action="#" method="post">
+				<input type="button" value="Закрыть">
+				<label for="name">Ваше имя:</label>
+				<input type="text" id="name" placeholder="Представьтесь пожалуйста">
+				<label for="email">Ваш e-mail:</label>
+				<input type="email" id="email" placeholder="Для отправки ответа">
+				<label for="email-text">Текст письма:</label>
+				<textarea id="email-text" placeholder="В свободной форме"></textarea>
+				<input type="submit" value="Отправить">
+			</form>
+		</div>
 	</body>
 </html>

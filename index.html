@@ -10,8 +10,8 @@
 
 			<!-- Первая строка меню -->
 			<div class="header-search">
-				<form class="search" action="#" method="get">
-					<input type="text" placeholder="Поиск по сайту">
+				<form class="search" action="https://echo.htmlacademy.ru" method="get">
+					<input type="text" name="search-field" placeholder="Поиск по сайту">
 					<input type="submit" value="Найти">
 				</form>
 			</div>
@@ -267,19 +267,19 @@
 			<img src="#" alt="Карта">
 		</div>
 		<div class="popup-write-us">
-			<form action="#" method="post">
+			<form action="https://echo.htmlacademy.ru" method="post">
 				<button type="button">Закрыть</button>
 				<div class="popup-name">
 					<label for="name">Ваше имя:</label>
-					<input type="text" id="name" placeholder="Представьтесь пожалуйста">
+					<input type="text" id="name" name="name" placeholder="Представьтесь пожалуйста">
 				</div>
 				<div class="popup-email">
 					<label for="email">Ваш e-mail:</label>
-					<input type="email" id="email" placeholder="Для отправки ответа">
+					<input type="email" id="email" name="email" placeholder="Для отправки ответа">
 				</div>
 				<div class="popup-text">
 					<label for="email-text">Текст письма:</label>
-					<textarea id="email-text" placeholder="В свободной форме"></textarea>
+					<textarea id="email-text" name="email-text" placeholder="В свободной форме"></textarea>
 				</div>
 				<input type="submit" value="Отправить">
 			</form>

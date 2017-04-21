@@ -1,0 +1,27 @@
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 30px;
+	letter-spacing: 0.01em;
+	color: #464646;
+}
+
+.title, .slide-title {
+	font-family: "Gilroy", sans-serif;
+	font-size: 47px;
+	font-weight: bold;
+	line-height: normal;
+	letter-spacing: 0.01em;
+	color: #000;
+}
+
+.sorting-title, .filter-title {
+	font-family: "Gilroy", sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: normal;
+	letter-spacing: 0.2em;
+	color: #000;
+	text-transform: uppercase;
+}

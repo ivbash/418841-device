@@ -3,15 +3,16 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Девайс</title>
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<header class="index-header">
-			<a class="logo" href="#">Device</a>
+			<a class="logo" href="#"><img src="img/header-logo.png" width="164" height="36" alt="Девайс"></a>
 
 			<!-- Первая строка меню -->
 			<div class="header-search">
-				<form class="search" action="#" method="get">
-					<input type="text" placeholder="Поиск по сайту">
+				<form class="search" action="https://echo.htmlacademy.ru" method="get">
+					<input type="text" name="search-field" placeholder="Поиск по сайту">
 					<input type="submit" value="Найти">
 				</form>
 			</div>
@@ -68,7 +69,7 @@
 				<!-- Первый слайд -->
 				<div class="slide slide-1">
 					<div class="slide-img">
-						<img src="#" alt="Селфи-палка">
+						<img src="img/image-selfy.png" width="384" height="486" alt="Селфи-палка">
 					</div>
 					<div class="slide-text">
 						<h2 class="slide-title">Делай селфи, как Бен Стиллер!</h2>
@@ -94,7 +95,7 @@
 				<!-- Второй слайд -->
 				<div class="slide slide-2">
 					<div class="slide-img">
-						<img src="#" alt="Фитнес-браслет">
+						<img src="img/image-fitness.png" width="345" height="485" alt="Фитнес-браслет">
 					</div>
 					<div class="slide-text">
 						<h2 class="slide-title">Худеем правильно!</h2>
@@ -112,7 +113,7 @@
 				<!-- Третий слайд -->
 				<div class="slide slide-3">
 					<div class="slide-img">
-						<img src="#" alt="Квадрокоптер">
+						<img src="img/image-quadrocopter.png" width="526" height="334" alt="Квадрокоптер">
 					</div>
 					<div class="slide-text">
 						<h2 class="slide-title">Порхает как бабочка, жалит как пчела!</h2>
@@ -187,7 +188,7 @@
 			<section class="company">
 				<!-- Блок "О нас" -->
 				<div class="about">
-					<h2>О нас</h2>
+					<h2 class="title">О нас</h2>
 					<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
 					<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
 					<ul>
@@ -200,10 +201,10 @@
 
 				<!-- Блок "Контакты" -->
 				<div class="contacts">
-					<h2>Контакты</h2>
+					<h2 class="title">Контакты</h2>
 					<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 					<div class="maps">
-						<a href="#"><img src="#" alt="Карта"></a>
+						<a href="#"><img src="img/map.png" width="560" height="222" alt="Карта"></a>
 					</div>
 					<a class="btn" href="#">Напишите нам</a>
 				</div>
@@ -213,7 +214,7 @@
 		<footer class="page-footer">
 			<!-- Первая строка -->
 			<div class="footer-row">
-				<a class="footer-logo">Device</a>
+				<a class="footer-logo"><img src="img/footer-logo.png" width="163" height="36" alt="Девайс"></a>
 				<ul class="footer-user-menu">
 					<li class="footer-user-item">
 						<a href="#">Войти</a>
@@ -263,23 +264,23 @@
 
 		<!-- Всплывающие окна -->
 		<div class="popup-map">
-			<input type="button" value="Закрыть">
-			<img src="#" alt="Карта">
+			<button type="button">Закрыть</button>
+			<img src="img/map-big.png" width="960" height="559" alt="Карта">
 		</div>
 		<div class="popup-write-us">
-			<form action="#" method="post">
+			<form action="https://echo.htmlacademy.ru" method="post">
 				<button type="button">Закрыть</button>
 				<div class="popup-name">
 					<label for="name">Ваше имя:</label>
-					<input type="text" id="name" placeholder="Представьтесь пожалуйста">
+					<input type="text" id="name" name="name" placeholder="Представьтесь пожалуйста">
 				</div>
 				<div class="popup-email">
 					<label for="email">Ваш e-mail:</label>
-					<input type="email" id="email" placeholder="Для отправки ответа">
+					<input type="email" id="email" name="email" placeholder="Для отправки ответа">
 				</div>
 				<div class="popup-text">
 					<label for="email-text">Текст письма:</label>
-					<textarea id="email-text" placeholder="В свободной форме"></textarea>
+					<textarea id="email-text" name="email-text" placeholder="В свободной форме"></textarea>
 				</div>
 				<input type="submit" value="Отправить">
 			</form>

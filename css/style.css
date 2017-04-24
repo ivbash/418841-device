@@ -1,3 +1,8 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	font-family: "Open Sans", sans-serif;
 	font-size: 15px;
@@ -5,8 +10,129 @@ body {
 	line-height: 30px;
 	letter-spacing: 0.01em;
 	color: #464646;
+	
+	/* dev */
+	background: url("../img/device-index-preview.jpg") no-repeat 50% 0;
 }
 
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.container {
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 20px;
+	
+	/* dev */
+	outline: 1px solid green;
+	background-color: rgba(0, 255, 0, 0.1);
+}
+
+/* header */
+.index-header, .page-header {
+	padding-top: 20px;
+}
+
+.logo {
+	display: block;
+	width: 164px;
+	margin-left: 60px;
+	margin-bottom: 10px;
+}
+
+.header-menu-wrap {
+	margin: 0 60px 20px;
+	
+	/* dev */
+	outline: 1px solid red;
+	background-color: rgba(255, 0, 0, 0.1);
+}
+
+.header-row {
+	margin-bottom: 15px;
+}
+
+.header-search {
+	float: left;
+	width: 440px;
+	
+	/* dev */
+	min-height: 50px;
+	outline: 1px solid yellow;
+	background-color: rgba(255, 255, 0, 0.2);
+}
+
+.user-menu {
+	float: right;
+	width: 500px;
+	
+	/* dev */
+	min-height: 50px;
+	outline: 1px solid yellow;
+	background-color: rgba(255, 255, 0, 0.2);
+}
+
+.user-item {
+	display: inline-block;
+}
+
+.header-menu {
+	float: left;
+	width: 440px;
+	
+	/* dev */
+	min-height: 50px;
+	outline: 1px solid yellow;
+	background-color: rgba(255, 255, 0, 0.2);
+}
+
+.catalog-sub-list {
+	display: none;
+	position: absolute;
+}
+
+.catalog-item:hover .catalog-sub-list {
+	display: block;
+}
+
+.services-menu {
+	float: right;
+	width: 500px;
+	
+	/* dev */
+	min-height: 50px;
+	outline: 1px solid yellow;
+	background-color: rgba(255, 255, 0, 0.2);
+}
+
+.slides-wrap {
+	margin: 0 60px;
+	
+	/* dev */
+	outline: 1px solid red;
+	background-color: rgba(255, 0, 0, 0.1);
+}
+
+.slide {
+	display: none;
+}
+
+input[id="slide-1"]:checked ~ [class*="slide-1"] {
+	display: block;
+}
+
+input[id="slide-2"]:checked ~ [class*="slide-2"] {
+	display: block;
+}
+
+input[id="slide-3"]:checked ~ [class*="slide-3"] {
+	display: block;
+}
+
+/* fonts */
 .title, .slide-title {
 	font-family: "Gilroy", sans-serif;
 	font-size: 47px;

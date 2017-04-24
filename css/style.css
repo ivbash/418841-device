@@ -12,7 +12,7 @@ body {
 	color: #464646;
 	
 	/* dev */
-	background: url("../img/device-index-preview.jpg") no-repeat 50% 0;
+	/*background: url("../img/device-index-preview.jpg") no-repeat 50% 0;*/
 }
 
 .clearfix::after {
@@ -31,7 +31,7 @@ body {
 	background-color: rgba(0, 255, 0, 0.1);
 }
 
-/* header */
+/* Шапка */
 .index-header, .page-header {
 	padding-top: 20px;
 }
@@ -43,6 +43,7 @@ body {
 	margin-bottom: 10px;
 }
 
+/* Меню в шапке */
 .header-menu-wrap {
 	margin: 0 60px 20px;
 	
@@ -108,12 +109,49 @@ body {
 	background-color: rgba(255, 255, 0, 0.2);
 }
 
+/* Слайдер в шапке */
 .slides-wrap {
+	position: relative;
 	margin: 0 60px;
 	
 	/* dev */
+	min-height: 486px;
 	outline: 1px solid red;
 	background-color: rgba(255, 0, 0, 0.1);
+}
+
+.slides-wrap input[type="radio"] {
+	display: none;
+}
+
+.slider-controls {
+	position: absolute;
+	top: 330px;
+	right: 3px;
+	font-size: 0;
+	line-height: 0;
+}
+
+.slider-controls .indicator {
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	margin-right: 22px;
+	border: 3px solid #000;
+	border-radius: 50%;
+	opacity: 0.3;
+}
+
+#slide-1:checked ~ .slider-controls label[for="slide-1"] {
+	opacity: 1;
+}
+
+#slide-2:checked ~ .slider-controls label[for="slide-2"] {
+	opacity: 1;
+}
+
+#slide-3:checked ~ .slider-controls label[for="slide-3"] {
+	opacity: 1;
 }
 
 .slide {
@@ -131,6 +169,22 @@ input[id="slide-2"]:checked ~ [class*="slide-2"] {
 input[id="slide-3"]:checked ~ [class*="slide-3"] {
 	display: block;
 }
+
+.slide-img {
+	float: left;
+	width: 384px;
+	margin-left: 30px;
+	line-height: 0;
+}
+
+.slide-text {
+	float: right;
+	width: 480px;
+	margin-right: 20px;
+	padding-top: 80px;
+}
+
+
 
 /* fonts */
 .title, .slide-title {

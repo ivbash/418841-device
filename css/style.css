@@ -36,6 +36,11 @@ body {
 	
 	/* dev */
 	/*background: url("../img/device-index-preview.jpg") no-repeat 50% 0;*/
+	/*background: url("../img/device-catalog-preview.jpg") no-repeat 50% 0;*/
+}
+
+main {
+	padding-bottom: 80px;
 }
 
 .clearfix::after {
@@ -52,7 +57,7 @@ body {
 
 /* header */
 .index-header, .page-header {
-	margin-bottom: 106px;
+	margin-bottom: 30px;
 	padding-top: 20px;
 	
 	/* Фон в шапке */
@@ -72,7 +77,8 @@ body {
 
 /* Меню в шапке */
 .header-menu-wrap {
-	margin: 0 60px 20px;
+	margin: 0 60px;
+	padding-bottom: 20px;
 }
 
 .header-row {
@@ -112,7 +118,7 @@ body {
 	position: absolute;
 }
 
-.catalog-item:hover .catalog-sub-list {
+.header-menu .catalog-item:hover .catalog-sub-list {
 	display: block;
 }
 
@@ -197,9 +203,10 @@ input[id="slide-3"]:checked ~ [class*="slide-3"] {
 	padding-top: 80px;
 }
 
-/* main */
+/* main-index */
 /* Блок навигации */
 .catalog-list {
+	margin-top: 106px;
 	margin-bottom: 75px;
 	font-size: 0;
 }
@@ -320,8 +327,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 
 /* Контактная информация */
 .company {
-	margin-bottom: 80px;
-	
 	/* dev */
 	min-height: 580px;
 }
@@ -334,6 +339,110 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 .contacts {
 	float: right;
 	width: 560px;
+}
+
+/* main-catalog */
+.title, .breadcrumbs, .filter-wrap {
+	margin-left: 60px;
+}
+
+.title {
+	margin-bottom: 15px;
+}
+
+.breadcrumbs {
+	margin-bottom: 45px;
+}
+
+.breadcrumbs-item {
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Фильтр */
+.filter-wrap {
+	float: left;
+	width: 200px;
+}
+
+.filter-title {
+	/* dev */
+	min-height: 70px;
+}
+
+.filter-fieldset label {
+	display: block;
+}
+
+/* Каталог */
+.catalog-wrap {
+	float: right;
+	width: 760px;
+}
+
+.sorting-wrap {
+	margin-bottom: 69px;
+}
+
+.sorting-title {
+	display: inline-block;
+	vertical-align: top;
+	
+	/* dev */
+	min-height: 70px;
+}
+
+.sorting-list {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.sorting-item {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.sorting-arrows {
+	float: right;
+}
+
+.catalog {
+	font-size: 0;
+}
+
+.catalog .catalog-item {
+	display: inline-block;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	vertical-align: top;
+	font-size: 15px;
+	
+	/* dev */
+	min-height: 460px;
+}
+
+.catalog .catalog-item:nth-child(even) {
+	margin-right: -5px;
+}
+
+/* Переключатель страниц */
+.paginator {
+	text-align: center;
+	
+	/* dev */
+	min-height: 70px;
+}
+
+.paginator .prev {
+	float: left;
+}
+
+.paginator a {
+	display: inline-block;
+}
+
+.paginator .next {
+	float: right;
 }
 
 /* footer */

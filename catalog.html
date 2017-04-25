@@ -6,54 +6,60 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<header class="page-header">
+		<header class="page-header container">
 			<a class="logo" href="#">
 				<img src="img/header-logo.png" width="164" height="36" alt="Девайс">
 			</a>
 
-			<!-- Первая строка меню -->
-			<div class="header-search">
-				<form class="search" action="https://echo.htmlacademy.ru" method="get">
-					<input type="text" name="search-field" placeholder="Поиск по сайту">
-					<input type="submit" value="Найти">
-				</form>
-			</div>
-			<ul class="user-menu">
-				<li class="user-item">
-					<a href="#">Войти</a>
-				</li>
-				<li class="user-item">
-					<a href="#">Сравнить</a>
-				</li>
-				<li class="user-item">
-					<a href="#">Корзина</a>
-				</li>
-			</ul>
-
-			<!-- Вторая строка меню -->
-			<ul class="header-menu">
-				<li class="catalog-item">
-					<a href="#">Каталог товаров</a>
-					<ul class="catalog-sub-list">
-						<li class="catalog-sub-item">
-							<a href="#">Виртуальная реальность</a>
-							<a href="#">Моноподы для селфи</a>
-							<a href="#">Экшн-камеры</a>
+			<div class="header-menu-wrap clearfix">
+				<!-- Первая строка меню -->
+				<div class="header-row clearfix">
+					<div class="header-search">
+						<form class="search" action="https://echo.htmlacademy.ru" method="get">
+							<input type="text" name="search-field" placeholder="Поиск по сайту">
+							<input type="submit" value="Найти">
+						</form>
+					</div>
+					<ul class="user-menu">
+						<li class="user-item">
+							<a href="#">Войти</a>
 						</li>
-						<li class="catalog-sub-item">
-							<a href="#">Фитнес-браслеты</a>
-							<a href="#">Умные часы</a>
+						<li class="user-item">
+							<a href="#">Сравнить</a>
 						</li>
-						<li class="catalog-sub-item">
-							<a href="#">Квадрокоптеры</a>
+						<li class="user-item">
+							<a href="#">Корзина</a>
 						</li>
 					</ul>
-				</li>
-			</ul>
-			<div class="half-right">
-				<a href="#">Доставка</a>
-				<a href="#">Гарантия</a>
-				<a class="float-right" href="#">Контакты</a>
+				</div>
+
+				<!-- Вторая строка меню -->
+				<div class="header-row clearfix">
+					<ul class="header-menu">
+						<li class="catalog-item">
+							<a href="#">Каталог товаров</a>
+							<ul class="catalog-sub-list">
+								<li class="catalog-sub-item">
+									<a href="#">Виртуальная реальность</a>
+									<a href="#">Моноподы для селфи</a>
+									<a href="#">Экшн-камеры</a>
+								</li>
+								<li class="catalog-sub-item">
+									<a href="#">Фитнес-браслеты</a>
+									<a href="#">Умные часы</a>
+								</li>
+								<li class="catalog-sub-item">
+									<a href="#">Квадрокоптеры</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<div class="services-menu">
+						<a href="#">Доставка</a>
+						<a href="#">Гарантия</a>
+						<a class="float-right" href="#">Контакты</a>
+					</div>
+				</div>
 			</div>
 		</header>
 

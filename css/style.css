@@ -39,7 +39,9 @@ body {
 	/*background: url("../img/device-catalog-preview.jpg") no-repeat 50% 0;*/
 }
 
-main {
+.main-content {
+	min-width: 1200px;
+	padding-top: 15px;
 	padding-bottom: 80px;
 }
 
@@ -57,8 +59,8 @@ main {
 
 /* header */
 .index-header, .page-header {
-	margin-bottom: 30px;
 	padding-top: 20px;
+	padding-bottom: 15px;
 	
 	/* Фон в шапке */
 	/*background-image: linear-gradient(rgba(240, 197, 46, 0.5), rgba(240, 197, 46, 0.5));
@@ -103,6 +105,7 @@ main {
 
 .user-item {
 	display: inline-block;
+	vertical-align: top;
 }
 
 .header-menu {
@@ -156,6 +159,7 @@ main {
 	width: 4px;
 	height: 4px;
 	margin-right: 22px;
+	vertical-align: top;
 	border: 3px solid #000;
 	border-radius: 50%;
 	opacity: 0.3;
@@ -206,7 +210,7 @@ input[id="slide-3"]:checked ~ [class*="slide-3"] {
 /* main-index */
 /* Блок навигации */
 .catalog-list {
-	margin-top: 106px;
+	margin-top: 76px;
 	margin-bottom: 75px;
 	font-size: 0;
 }
@@ -299,6 +303,7 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	width: 260px;
 	height: 100px;
 	margin-right: 40px;
+	vertical-align: top;
 }
 
 .trademarks-item:last-child {
@@ -342,15 +347,13 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 }
 
 /* main-catalog */
-.title, .breadcrumbs, .filter-wrap {
+.page-title {
 	margin-left: 60px;
-}
-
-.title {
 	margin-bottom: 15px;
 }
 
 .breadcrumbs {
+	margin-left: 60px;
 	margin-bottom: 45px;
 }
 
@@ -360,14 +363,29 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 }
 
 /* Фильтр */
-.filter-wrap {
+.filter-container {
 	float: left;
+	width: calc(50% - 253px);
+	background-color: #efefef;
+}
+
+.filter-wrap {
+	float: right;
 	width: 200px;
+	margin-right: 68px;
+}
+
+.filter-title-container {
+	background-color: #dcdcdc;
+	
+	/* dev */
+	min-height: 70px;
 }
 
 .filter-title {
-	/* dev */
-	min-height: 70px;
+	float: right;
+	width: 200px;
+	margin-right: 68px;
 }
 
 .filter-fieldset label {
@@ -375,25 +393,31 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 }
 
 /* Каталог */
-.catalog-wrap {
+.catalog-container {
 	float: right;
-	width: 760px;
+	width: calc(50% + 253px);
+}
+
+.sorting-container {
+	background-color: #efefef;
 }
 
 .sorting-wrap {
-	margin-bottom: 69px;
-}
-
-.sorting-title {
-	display: inline-block;
-	vertical-align: top;
+	width: 760px;
+	margin-left: 72px;
 	
 	/* dev */
 	min-height: 70px;
 }
 
+.sorting-title {
+	display: inline-block;
+	vertical-align: top;
+}
+
 .sorting-list {
 	display: inline-block;
+	width: 460px;
 	vertical-align: top;
 }
 
@@ -404,6 +428,13 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 
 .sorting-arrows {
 	float: right;
+	width: 140px;
+}
+
+.catalog-wrap {
+	width: 760px;
+	margin-top: 69px;
+	margin-left: 72px;
 }
 
 .catalog {
@@ -439,6 +470,7 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 
 .paginator a {
 	display: inline-block;
+	vertical-align: top;
 }
 
 .paginator .next {
@@ -464,6 +496,7 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 
 .footer-user-item, .footer-services-item, .social-item {
 	display: inline-block;
+	vertical-align: top;
 }
 
 .footer-logo {
@@ -503,8 +536,17 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	float: right;
 }
 
+/* popup */
+.popup-map {
+	display: none;
+}
+
+.popup-write-us {
+	display: none;
+}
+
 /* fonts */
-.title, .slide-title {
+.title {
 	font-family: "Gilroy", sans-serif;
 	font-size: 47px;
 	font-weight: bold;
@@ -513,7 +555,35 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	color: #000;
 }
 
-.sorting-title, .filter-title {
+.page-title {
+	font-family: "Gilroy", sans-serif;
+	font-size: 47px;
+	font-weight: bold;
+	line-height: normal;
+	letter-spacing: 0.01em;
+	color: #000;
+}
+
+.slide-title {
+	font-family: "Gilroy", sans-serif;
+	font-size: 47px;
+	font-weight: bold;
+	line-height: normal;
+	letter-spacing: 0.01em;
+	color: #000;
+}
+
+.sorting-title {
+	font-family: "Gilroy", sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: normal;
+	letter-spacing: 0.2em;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.filter-title {
 	font-family: "Gilroy", sans-serif;
 	font-size: 16px;
 	font-weight: bold;

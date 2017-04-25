@@ -63,9 +63,9 @@
 			</div>
 		</header>
 
-		<main>
-			<div class="container clearfix">
-				<h1 class="title">Моноподы для селфи</h1>
+		<main class="main-content clearfix">
+			<div class="container">
+				<h1 class="page-title">Моноподы для селфи</h1>
 
 				<!-- Навигационная цепочка -->
 				<ul class="breadcrumbs">
@@ -79,10 +79,14 @@
 						<a href="#">Моноподы для селфи</a>
 					</li>
 				</ul>
+			</div>
 
+			<div class="filter-container clearfix">
 				<!-- Фильтр -->
-				<div class="filter-wrap">
+				<div class="filter-title-container clearfix">
 					<h2 class="filter-title">Фильтр:</h2>
+				</div>
+				<div class="filter-wrap">
 					<form action="https://echo.htmlacademy.ru" method="get">
 						<fieldset class="filter-fieldset filter-fieldset-price">
 							<legend>Стоимость</legend>
@@ -111,11 +115,13 @@
 						<input type="submit" value="Показать">
 					</form>
 				</div>
+			</div>
 
-				<!-- Каталог товаров -->
-				<div class="catalog-wrap">
-					<!-- Сортировка -->
-					<div class="sorting-wrap">
+			<!-- Каталог товаров -->
+			<div class="catalog-container">
+				<!-- Сортировка -->
+				<div class="sorting-container">
+					<div class="sorting-wrap clearfix">
 						<h2 class="sorting-title">Сортировка:</h2>
 						<ul class="sorting-list">
 							<li class="sorting-item">
@@ -133,8 +139,9 @@
 							<a class="decrease" href="#">По убыванию</a>
 						</div>
 					</div>
-
-					<!-- Каталог -->
+				</div>
+				<!-- Каталог -->
+				<div class="catalog-wrap">
 					<div class="catalog">
 						<article class="catalog-item">
 							<div class="item-img">

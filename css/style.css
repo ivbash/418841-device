@@ -55,15 +55,17 @@ padding: 0;
 body {
 	margin: 0;
 	padding: 0;
+	
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 30px;
 	letter-spacing: 0.01em;
-	color: #464646;
+	color: #000;
 
 	/* dev */
 	background: url("../img/device-index-preview.jpg") no-repeat 50% 0;
+/*	background: url("../img/device-index-preview-menu.jpg") no-repeat 50% 0;*/
 	/*background: url("../img/device-catalog-preview.jpg") no-repeat 50% 0;*/
 }
 
@@ -91,11 +93,11 @@ body {
 	padding-bottom: 15px;
 
 	/* Фон в шапке */
-	/*background-image: linear-gradient(rgba(240, 197, 46, 0.5), rgba(240, 197, 46, 0.5));
+	background-image: linear-gradient(rgba(240, 197, 46, 0.5), rgba(240, 197, 46, 0.5));
 	background-repeat: no-repeat;
-	background-size: 100% 300px;
+	background-size: 100% 298px;
 	background-position: 0 40px;
-	background-clip: content-box;*/
+	background-clip: content-box;
 }
 
 .logo {
@@ -130,12 +132,6 @@ body {
 	width: 440px;
 	padding-top: 4px;
 	padding-bottom: 4px;
-	font-family: "Open Sans", "Arial", sans-serif;
-	font-size: 15px;
-	font-weight: 300;
-	line-height: 36px;
-	letter-spacing: 0.01em;
-	color: #000;
 }
 
 .search {
@@ -156,14 +152,17 @@ body {
 
 .search input[type="text"] {
 	width: 180px;
-	min-height: 36px; /* EPIC */
+	min-height: 36px; /* IE10 */
 	padding: 7px 15px 4px 40px;
-	font: inherit;
-	font-size: 15px;
-	line-height: inherit;
-	letter-spacing: inherit;
 	background-color: transparent;
 	border: none;
+	
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 36px;
+	letter-spacing: 0.01em;
+	color: #000;
 }
 
 .search input[type="text"]::-moz-placeholder {
@@ -218,12 +217,15 @@ body {
 .search input[type="submit"] {
 	display: none;
 	padding: 4px 18px;
-	font: inherit;
-	font-size: 15px;
-	line-height: inherit;
-	letter-spacing: inherit;
 	background-color: transparent;
 	border: 2px solid #000;
+	
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 36px;
+	letter-spacing: 0.01em;
+	color: #000;
 }
 
 .search input[type="submit"]:hover {
@@ -241,6 +243,7 @@ body {
 	width: 500px;
 	margin: 0;
 	padding: 0;
+	
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
@@ -303,11 +306,8 @@ body {
 	opacity: 0.3;
 }
 
-.float-right {
-	float: right;
-}
-
 .user-menu .float-right {
+	float: right;
 	width: 220px;
 }
 
@@ -319,23 +319,122 @@ body {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: normal;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: #000;
 }
 
-.catalog-sub-list {
+.header-menu-item {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.header-menu-item > a {
+	display: block;
+	position: relative;
+	padding: 13px 30px 13px 0;
+	color: inherit;
+	text-decoration: none;
+}
+
+.header-menu-item > a::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 15px;
+	right: 5px;
+	width: 16px;
+	height: 16px;
+	background: url("../img/sprite.png") no-repeat 0 -10px;
+}
+
+.header-menu-item a:hover {
+	opacity: 0.6;
+}
+
+.header-menu-item a:active {
+	opacity: 0.3;
+}
+
+.menu-sub-list {
 	display: none;
 	position: absolute;
+	left: -60px;
+	top: 48px;
+	z-index: 1;
+	width: 1040px;
+	margin: 0;
+	padding: 10px 60px 32px;
+	background-color: #f7e296;
+	font-size: 0;
 }
 
-.header-menu .catalog-item:hover .catalog-sub-list {
+.menu-sub-item {
+	display: inline-block;
+	vertical-align: top;
+	min-width: 160px;
+	margin-right: 35px;
+}
+
+.menu-sub-item:first-child {
+	width: 200px;
+}
+
+.menu-sub-item a {
+	display: block;
+	text-decoration: none;
+	
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 36px;
+	letter-spacing: 0.01em;
+	text-transform: none;
+	color: #000;
+}
+
+.header-menu-item:hover .menu-sub-list {
 	display: block;
 }
 
 .services-menu {
 	float: right;
 	width: 500px;
+	
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: normal;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: #000;
+}
 
-	/* dev */
-	min-height: 50px;
+.services-menu a {
+	display: block;
+	float: left;
+	margin-right: 34px;
+	padding: 13px 0 13px 0;
+	color: inherit;
+	text-decoration: none;
+}
+
+.services-menu a:last-child {
+	float: right;
+	margin-right: -2px;
+}
+
+.services-menu a:hover {
+	opacity: 0.6;
+}
+
+.services-menu a:active {
+	opacity: 0.3;
 }
 
 /* Слайдер в шапке */

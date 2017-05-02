@@ -71,7 +71,7 @@ body {
 /*	background: url("../img/device-index-preview-menu.jpg") no-repeat 50% 0;*/
 /*	background: url("../img/device-index-preview-slide-2.jpg") no-repeat 50% 0;*/
 /*	background: url("../img/device-index-preview-slide-3.jpg") no-repeat 50% 0;*/
-	/*background: url("../img/device-catalog-preview.jpg") no-repeat 50% 0;*/
+/*	background: url("../img/device-catalog-preview.jpg") no-repeat 50% 0;*/
 }
 
 .main-content {
@@ -764,7 +764,7 @@ input[id="slide-3"]:checked ~ [class*="slide-3"] {
 
 /* Слайдер сервисов */
 .services-slides-wrap {
-	margin-bottom: 90px;
+	margin-bottom: 92px;
 	padding-top: 10px;
 	padding-bottom: 69px;
 	background-image: linear-gradient(#e5e5e5, #e5e5e5);
@@ -925,23 +925,47 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 }
 
 .trademarks-item.dji {
-	background-image: url("../img/trademarks-dji-color.png");
-	background-repeat: no-repeat;
+	background: url("../img/trademarks-dji.png") no-repeat;
+	opacity: 0.2;
+	transition: 0.2s ease-in-out;
+}
+
+.trademarks-item.dji:hover {
+	background: url("../img/trademarks-dji-color.png") no-repeat;
+	opacity: 1;
 }
 
 .trademarks-item.spgadgets {
-	background-image: url("../img/trademarks-spgadgets-color.png");
-	background-repeat: no-repeat;
+	background: url("../img/trademarks-spgadgets.png") no-repeat;
+	opacity: 0.2;
+	transition: 0.2s ease-in-out;
+}
+
+.trademarks-item.spgadgets:hover {
+	background: url("../img/trademarks-spgadgets-color.png") no-repeat;
+	opacity: 1;
 }
 
 .trademarks-item.gopro {
-	background-image: url("../img/trademarks-gopro-color.png");
-	background-repeat: no-repeat;
+	background: url("../img/trademarks-gopro.png") no-repeat;
+	opacity: 0.2;
+	transition: 0.2s ease-in-out;
+}
+
+.trademarks-item.gopro:hover {
+	background: url("../img/trademarks-gopro-color.png") no-repeat;
+	opacity: 1;
 }
 
 .trademarks-item.vive {
-	background-image: url("../img/trademarks-vive-color.png");
-	background-repeat: no-repeat;
+	background: url("../img/trademarks-vive.png") no-repeat;
+	opacity: 0.2;
+	transition: 0.2s ease-in-out;
+}
+
+.trademarks-item.vive:hover {
+	background: url("../img/trademarks-vive-color.png") no-repeat;
+	opacity: 1;
 }
 
 /* Контактная информация */

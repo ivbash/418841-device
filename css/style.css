@@ -98,7 +98,7 @@ body {
 	padding-bottom: 15px;
 
 	/* Фон в шапке */
-	background-image: linear-gradient(#f7e296, #f7e296);
+	background-image: linear-gradient(rgba(240, 197, 46, 0.5), rgba(240, 197, 46, 0.5));
 	background-repeat: no-repeat;
 	background-size: 100% 298px;
 	background-position: 0 40px;
@@ -691,10 +691,18 @@ input[id="slide-3"]:checked ~ [class*="slide-3"] {
 
 .catalog-list .catalog-item {
 	display: inline-block;
+	position: relative;
 	width: 160px;
 	margin-right: 40px;
 	vertical-align: top;
-	font-size: 14px;
+	
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: normal;
+	letter-spacing: 0.01em;
+	color: #000;
+	text-decoration: none;
 }
 
 .catalog-list .catalog-item:last-child {
@@ -706,16 +714,59 @@ input[id="slide-3"]:checked ~ [class*="slide-3"] {
 	display: block;
 	width: 160px;
 	height: 160px;
-	margin-bottom: 30px;
+	margin-bottom: 34px;
 	background-color: rgba(240, 197, 46, 0.5);
+}
+
+.catalog-list .catalog-item::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 160px;
+	height: 160px;
+}
+
+.catalog-list .catalog-item:hover::before {
+	background-color: rgba(240, 197, 46, 1);
+}
+
+.catalog-list .catalog-item:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-list .catalog-item:active::after {
+	opacity: 0.3;
+}
+
+.catalog-list .catalog-item.virtual::after {
+	background: url("../img/nav-virtual.png") no-repeat center;
+}
+
+.catalog-list .catalog-item.selfy::after {
+	background: url("../img/nav-selfy.png") no-repeat bottom;
+}
+
+.catalog-list .catalog-item.action-cam::after {
+	background: url("../img/nav-action-cam.png") no-repeat center;
+}
+
+.catalog-list .catalog-item.fitness::after {
+	background: url("../img/nav-fitness.png") no-repeat center;
+}
+
+.catalog-list .catalog-item.smart-watch::after {
+	background: url("../img/nav-smart-watch.png") no-repeat center;
+}
+
+.catalog-list .catalog-item.quadrocopter::after {
+	background: url("../img/nav-quadrocopter.png") no-repeat center;
 }
 
 /* Слайдер сервисов */
 .services-slides-wrap {
 	margin-bottom: 90px;
-
-	/* dev */
-	min-height: 390px;
 }
 
 .services-slides-wrap input[type="radio"] {

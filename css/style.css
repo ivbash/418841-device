@@ -970,18 +970,144 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 
 /* Контактная информация */
 .company {
-	/* dev */
-	min-height: 580px;
+	padding-bottom: 10px;
 }
 
 .about {
+	position: relative;
 	float: left;
-	width: 560px;
+	width: 480px;
+	padding-top: 13px;
+	padding-right: 80px;
+}
+
+.about::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 4px;
+	width: 80px;
+	height: 7px;
+	background-color: #000;
 }
 
 .contacts {
+	position: relative;
 	float: right;
 	width: 560px;
+	padding-top: 13px;
+}
+
+.contacts::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 4px;
+	width: 80px;
+	height: 7px;
+	background-color: #000;
+}
+
+.title {
+	margin: 39px 0 37px;
+	
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 47px;
+	font-weight: 800;
+	line-height: normal;
+	letter-spacing: 0.01em;
+	color: #000;
+}
+
+.description {
+	margin: 30px 0;
+	
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 30px;
+	letter-spacing: 0;
+	color: #464646;
+}
+
+.list {
+	margin: 65px 0 64px;
+	padding: 0;
+	padding-left: 35px;
+	list-style: none;
+	
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 16px;
+	font-weight: 800;
+	line-height: 40px;
+	letter-spacing: 0;
+	color: #000;
+}
+
+.list-item {
+	position: relative;
+}
+
+.list-item::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: -35px;
+	top: 16px;
+	width: 4px;
+	height: 4px;
+	margin-right: 22px;
+	vertical-align: top;
+	border: 3px solid #000;
+	border-radius: 50%;
+	opacity: 0.3;
+}
+
+.map {
+	margin-top: 37px;
+	margin-bottom: 80px;
+	line-height: 0;
+}
+
+.company .btn {
+	display: block;
+	position: relative;
+	z-index: 1;
+	width: 260px;
+	
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: normal;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: #000;
+	text-align: center;
+	text-decoration: none;
+}
+
+.company .btn::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 8px;
+	background-color: #f0c52e;
+	transform: translateY(-50%);
+	transition: 0.1s ease-in-out;
+}
+
+.company .btn:hover::before {
+	height: 40px;
+}
+
+.company .btn:active {
+	color: rgba(0, 0, 0, 0.3);
 }
 
 /* main-catalog */
@@ -1184,15 +1310,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 }
 
 /* fonts */
-.title {
-	font-family: "Gilroy", sans-serif;
-	font-size: 47px;
-	font-weight: 800;
-	line-height: normal;
-	letter-spacing: 0.01em;
-	color: #000;
-}
-
 .page-title {
 	font-family: "Gilroy", sans-serif;
 	font-size: 47px;

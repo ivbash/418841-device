@@ -1,4 +1,5 @@
 /* dev */
+/*
 body > * {
 outline: 1px solid green;
 background-color: rgba(0, 255, 0, 0.1);
@@ -13,10 +14,12 @@ body > * > * > * {
 outline: 1px solid yellow;
 background-color: rgba(255, 255, 0, 0.2);
 }
+
 body > * > * > * > * {
 outline: 1px solid blue;
 background-color: rgba(0, 0, 255, 0.1);
 }
+*/
 
 
 
@@ -64,7 +67,7 @@ body {
 	color: #000;
 
 	/* dev */
-	background: url("../img/device-index-preview.jpg") no-repeat 50% 0;
+/*	background: url("../img/device-index-preview.jpg") no-repeat 50% 0;*/
 /*	background: url("../img/device-index-preview-menu.jpg") no-repeat 50% 0;*/
 /*	background: url("../img/device-index-preview-slide-2.jpg") no-repeat 50% 0;*/
 /*	background: url("../img/device-index-preview-slide-3.jpg") no-repeat 50% 0;*/
@@ -95,7 +98,7 @@ body {
 	padding-bottom: 15px;
 
 	/* Фон в шапке */
-	background-image: linear-gradient(rgba(240, 197, 46, 0.5), rgba(240, 197, 46, 0.5));
+	background-image: linear-gradient(#f7e296, #f7e296);
 	background-repeat: no-repeat;
 	background-size: 100% 298px;
 	background-position: 0 40px;
@@ -442,7 +445,7 @@ body {
 /* Слайдер в шапке */
 .slides-wrap {
 	position: relative;
-	margin: 0 60px 0 0;
+	margin: 0;
 	padding-top: 5px;
 }
 
@@ -453,7 +456,7 @@ body {
 .slider-controls {
 	position: absolute;
 	top: 332px;
-	right: 3px;
+	right: 63px;
 	z-index: 2;
 	font-size: 0;
 	line-height: 0;
@@ -533,7 +536,7 @@ input[id="slide-3"]:checked ~ [class*="slide-3"] {
 	position: relative;
 	z-index: 1;
 	float: right;
-	width: 501px;
+	width: 561px;
 	padding-top: 77px;
 }
 
@@ -552,7 +555,7 @@ input[id="slide-3"]:checked ~ [class*="slide-3"] {
 	content: "";
 	display: block;
 	position: absolute;
-	right: -15px;
+	right: 45px;
 	top: -15px;
 	z-index: -1;
 	
@@ -570,12 +573,12 @@ input[id="slide-3"]:checked ~ [class*="slide-3"] {
 
 .slide-2 .slide-text::after {
 	content: "02";
-	right: -13px;
+	right: 46px;
 }
 
 .slide-3 .slide-text::after {
 	content: "03";
-	right: -13px;
+	right: 47px;
 }
 
 .slide-title {
@@ -603,11 +606,10 @@ input[id="slide-3"]:checked ~ [class*="slide-3"] {
 
 .slide .btn {
 	display: block;
-	position: absolute;
-	left: 1px;
-	top: 322px;
-	z-index: 1;
+	position: relative;
 	width: 220px;
+	margin-top: 51px;
+	margin-left: 2px;
 	
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 18px;
@@ -643,10 +645,7 @@ input[id="slide-3"]:checked ~ [class*="slide-3"] {
 }
 
 .feature-list {
-	position: absolute;
-	left: 0;
-	top: 405px;
-	margin: 0;
+	margin: 61px 0 0;
 	padding: 0;
 	list-style: none;
 }

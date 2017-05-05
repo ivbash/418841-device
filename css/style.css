@@ -1656,6 +1656,7 @@ input[type="radio"]:checked + label::after {
 
 /* footer */
 .page-footer {
+	min-width: 1200px;
 	padding-top: 60px;
 	padding-bottom: 30px;
 	background-color: #464646;

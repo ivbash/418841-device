@@ -1552,6 +1552,7 @@ input[type="radio"]:checked + label::after {
 .catalog .catalog-item-link {
 	display: inline-block;
 	vertical-align: top;
+	width: 259px;
 	
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 18px;

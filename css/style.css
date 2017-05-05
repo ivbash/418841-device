@@ -1470,9 +1470,32 @@ input[type="radio"]:checked + label::after {
 	line-height: 0;
 }
 
+.catalog .item-img.new::before {
+	content: "New";
+	display: block;
+	position: absolute;
+	top: 28px;
+	right: 27px;
+	width: 56px;
+	height: 37px;
+	padding-top: 19px;
+	border: 2px solid rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
+	
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-size: 14px;
+	font-weight: 800;
+	line-height: normal;
+	letter-spacing: 0.05em;
+	color: rgba(0, 0, 0, 0.2);
+	text-transform: uppercase;
+	text-align: center;
+}
+
 .shop {
 	display: none;
 	position: absolute;
+	z-index: 1;
 	left: 0;
 	top: 0;
 	width: 360px;

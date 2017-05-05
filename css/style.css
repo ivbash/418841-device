@@ -35,7 +35,6 @@ body {
 }
 
 .main-content {
-	display: block; /* IE10 */
 	min-width: 1200px;
 	padding-top: 15px;
 	padding-bottom: 74px;

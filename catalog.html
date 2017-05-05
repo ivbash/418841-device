@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Моноподы для селфи</title>
+		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
@@ -20,8 +21,11 @@
 							<input type="submit" value="Найти">
 						</form>
 					</div>
-					<div class="user-menu clearfix">
-						<a class="user-item user" href="#">Войти</a>
+					<div class="user-menu">
+						<div class="float-left clearfix">
+							<a class="user-item user" href="#">Валентин Петухов</a>
+							<a class="logout" href="#">Выйти</a>
+						</div>
 						<div class="float-right clearfix">
 							<a class="user-item compare" href="#">Сравнить</a>
 							<a class="user-item cart" href="#">Корзина</a>
@@ -121,7 +125,7 @@
 						<h2 class="sorting-title">Сортировка:</h2>
 						<ul class="sorting-list">
 							<li class="sorting-item">
-								<a class="active" href="#">По цене</a>
+								<a class="active">По цене</a>
 							</li>
 							<li class="sorting-item">
 								<a href="#">По типу</a>
@@ -132,55 +136,55 @@
 						</ul>
 						<div class="sorting-arrows clearfix">
 							<a class="ascend" href="#">По возростанию</a>
-							<a class="decrease active" href="#">По убыванию</a>
+							<a class="decrease active">По убыванию</a>
 						</div>
 					</div>
 				</div>
 				<!-- Каталог -->
 				<div class="catalog-wrap">
 					<div class="catalog">
-						<article class="catalog-item">
+						<article class="catalog-item clearfix">
 							<div class="item-img">
 								<img src="img/catalog-item-1.jpg" width="360" height="380" alt="Изображение товара">
 								<div class="shop">
-									<a class="shopcart" href="#">В корзину</a>
+									<a class="btn shopcart" href="#">В корзину</a>
 									<a class="compare" href="#"> Добавить к сравнению</a>
 								</div>
 							</div>
-							<a href="#"><b>Любительская селфи-палка</b></a>
+							<a class="catalog-item-link" href="#"><b>Любительская селфи-палка</b></a>
 							<span class="price">500 руб.</span>
 						</article>
-						<article class="catalog-item">
+						<article class="catalog-item clearfix">
 							<div class="item-img">
 								<img src="img/catalog-item-2.jpg" width="360" height="380" alt="Изображение товара">
 								<div class="shop">
-									<a class="shopcart" href="#">В корзину</a>
+									<a class="btn shopcart" href="#">В корзину</a>
 									<a class="compare" href="#"> Добавить к сравнению</a>
 								</div>
 							</div>
-							<a href="#"><b>Профессиональная селфи-палка</b></a>
+							<a class="catalog-item-link" href="#"><b>Профессиональная<br>селфи-палка</b></a>
 							<span class="price">1 500 руб.</span>
 						</article>
-						<article class="catalog-item">
+						<article class="catalog-item clearfix">
 							<div class="item-img">
 								<img src="img/catalog-item-3.jpg" width="360" height="380" alt="Изображение товара">
 								<div class="shop">
-									<a class="shopcart" href="#">В корзину</a>
+									<a class="btn shopcart" href="#">В корзину</a>
 									<a class="compare" href="#"> Добавить к сравнению</a>
 								</div>
 							</div>
-							<a href="#"><b>Непотопляемая селфи-палка</b></a>
+							<a class="catalog-item-link" href="#"><b>Непотопляемая селфи-палка</b></a>
 							<span class="price">2 500 руб.</span>
 						</article>
-						<article class="catalog-item item-new">
-							<div class="item-img">
+						<article class="catalog-item clearfix item-new">
+							<div class="item-img new">
 								<img src="img/catalog-item-4.jpg" width="360" height="380" alt="Изображение товара">
 								<div class="shop">
-									<a class="shopcart" href="#">В корзину</a>
+									<a class="btn shopcart" href="#">В корзину</a>
 									<a class="compare" href="#"> Добавить к сравнению</a>
 								</div>
 							</div>
-							<a href="#"><b>Селфи-палка «Следуй за мной»</b></a>
+							<a class="catalog-item-link" href="#"><b>Селфи-палка &laquo;Следуй за мной&raquo;</b></a>
 							<span class="price">4 900 руб.</span>
 						</article>
 					</div>
@@ -188,7 +192,7 @@
 					<!-- Переключатель страниц -->
 					<div class="paginator clearfix">
 						<a class="prev" href="#">Назад</a>
-						<a href="#">1</a>
+						<a class="active">1</a>
 						<a href="#">2</a>
 						<a href="#">3</a>
 						<a class="next" href="#">Вперед</a>

@@ -1073,6 +1073,7 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	margin-top: 37px;
 	margin-bottom: 80px;
 	line-height: 0;
+	background-color: #eaeaea;
 }
 
 .company .btn {
@@ -1932,6 +1933,7 @@ input[type="radio"]:checked + label::after {
 	z-index: 10;
 	width: 960px;
 	height: 559px;
+	background-color: #eaeaea;
 	box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
 	
 	/* dev */

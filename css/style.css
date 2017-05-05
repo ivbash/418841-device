@@ -435,7 +435,7 @@ body {
 	position: absolute;
 	left: -60px;
 	top: 48px;
-	z-index: 2;
+	z-index: 3;
 	width: 1040px;
 	margin: 0;
 	padding: 10px 60px 32px;
@@ -1552,7 +1552,6 @@ input[type="radio"]:checked + label::after {
 .catalog .catalog-item-link {
 	display: inline-block;
 	vertical-align: top;
-	width: 260px;
 	
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 18px;

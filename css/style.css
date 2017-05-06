@@ -1,25 +1,25 @@
 @font-face {
 	font-family: "Open Sans";
 	font-weight: 300;
-	src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/opensanslight.woff2") format("woff2");
+	src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
 }
 
 @font-face {
 	font-family: "Open Sans";
 	font-weight: 400;
-	src: local("Open Sans"), local("OpenSans"), url("../fonts/opensans.woff2") format("woff2");
+	src: local("Open Sans"), local("OpenSans"), url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
 }
 
 @font-face {
 	font-family: "Gilroy";
 	font-weight: 300;
-	src: local("Gilroy Light"), url("../fonts/gilroylight.woff2") format("woff2");
+	src: local("Gilroy Light"), url("../fonts/gilroylight.woff2") format("woff2"), url("../fonts/gilroylight.woff") format("woff");
 }
 
 @font-face {
 	font-family: "Gilroy";
 	font-weight: 800;
-	src: local("Gilroy ExtraBold"), url("../fonts/gilroyextrabold.woff2") format("woff2");
+	src: local("Gilroy ExtraBold"), url("../fonts/gilroyextrabold.woff2") format("woff2"), url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
 body {
@@ -181,6 +181,7 @@ body {
 	padding: 7px 15px 4px 40px;
 	background-color: transparent;
 	border: none;
+	outline: none;
 	
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
@@ -314,7 +315,11 @@ body {
 	margin-right: 18px;
 }
 
-.logout {
+.user-item.login {
+	float: left;
+}
+
+.user-menu .logout {
 	display: block;
 	float: right;
 	padding: 11px 0 10px;
@@ -323,11 +328,11 @@ body {
 	opacity: 0.3;
 }
 
-.logout:hover {
+.user-menu .logout:hover {
 	opacity: 0.6;
 }
 
-.logout:active {
+.user-menu .logout:active {
 	opacity: 1;
 }
 
@@ -350,6 +355,12 @@ body {
 }
 
 .user-item.user::before {
+	left: 0;
+	top: 23px;
+	background: url("../img/sprite.png") no-repeat 0 -31px;
+}
+
+.user-item.login::before {
 	left: 0;
 	top: 23px;
 	background: url("../img/sprite.png") no-repeat 0 -31px;
@@ -520,7 +531,7 @@ body {
 
 .slider-controls {
 	position: absolute;
-	top: 332px;
+	bottom: 149px;
 	right: 63px;
 	z-index: 2;
 	font-size: 0;
@@ -536,6 +547,7 @@ body {
 	border: 3px solid #000;
 	border-radius: 50%;
 	opacity: 0.3;
+	cursor: pointer;
 }
 
 .slider-controls label:hover {
@@ -660,6 +672,7 @@ input[id="slide-3"]:checked ~ [class*="slide-3"] {
 
 .slides-wrap .slide-description {
 	margin: 0;
+	padding-right: 78px;
 	
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
@@ -801,10 +814,7 @@ input[id="slide-3"]:checked ~ [class*="slide-3"] {
 	margin-bottom: 92px;
 	padding-top: 10px;
 	padding-bottom: 69px;
-	background-image: linear-gradient(#e5e5e5, #e5e5e5);
-	background-repeat: no-repeat;
-	background-size: 100% 298px;
-	background-position: 0 109px;
+	background-image: linear-gradient(to bottom, transparent, transparent 109px, #e5e5e5 109px, #e5e5e5);
 }
 
 .services-slides-wrap input[type="radio"] {
@@ -1026,7 +1036,8 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 }
 
 .description {
-	margin: 30px 0;
+	margin: 32px 0;
+	padding-right: 5px;
 	
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
@@ -1037,7 +1048,7 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 }
 
 .list {
-	margin: 65px 0 64px;
+	margin: 65px 0;
 	padding: 0;
 	padding-left: 35px;
 	list-style: none;
@@ -1071,7 +1082,7 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 
 .map {
 	margin-top: 37px;
-	margin-bottom: 80px;
+	margin-bottom: 82px;
 	line-height: 0;
 	background-color: #eaeaea;
 }
@@ -1145,7 +1156,7 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 /* Фильтр */
 .filter-container {
 	float: left;
-	width: calc(50% - 253px);
+	width: calc(50% - 252px);
 	background-color: #efefef;
 	
 	/* dev */
@@ -1303,7 +1314,7 @@ input[type="radio"]:checked + label::after {
 /* Каталог */
 .catalog-container {
 	float: right;
-	width: calc(50% + 253px);
+	width: calc(50% + 252px);
 }
 
 .sorting-container {
@@ -1501,7 +1512,6 @@ input[type="radio"]:checked + label::after {
 	width: 360px;
 	height: 100%;
 	background-color: rgba(238, 238, 238, 0.7);
-	cursor: pointer;
 }
 
 .shop .btn {
@@ -1557,7 +1567,7 @@ input[type="radio"]:checked + label::after {
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 18px;
 	font-weight: 800;
-	line-height: normal;
+	line-height: 22px;
 	letter-spacing: 0.01em;
 	color: #000;
 	text-decoration: none;
@@ -1669,7 +1679,7 @@ input[type="radio"]:checked + label::after {
 
 .footer-row:last-child {
 	position: relative;
-	margin-top: 45px;
+	margin-top: 42px;
 	padding-top: 5px;
 }
 
@@ -1688,7 +1698,7 @@ input[type="radio"]:checked + label::after {
 .footer-logo {
 	float: left;
 	width: 163px;
-	margin-top: 5px;
+	margin-top: 3px;
 	line-height: 0;
 }
 
@@ -1759,9 +1769,15 @@ input[type="radio"]:checked + label::after {
 	opacity: 0.3;
 }
 
-.footer-user-item a.user::before {
+.footer-user-item a.login::before {
 	left: 2px;
 	top: 13px;
+	background: url("../img/sprite.png") no-repeat 0 -47px;
+}
+
+.footer-user-item a.logout::before {
+	left: 5px;
+	top: 11px;
 	background: url("../img/sprite.png") no-repeat 0 -47px;
 }
 
@@ -1820,7 +1836,7 @@ input[type="radio"]:checked + label::after {
 
 .footer-services-item a {
 	display: block;
-	padding: 11px 0;
+	padding: 14px 0;
 	color: inherit;
 	text-decoration: none;
 }
@@ -2017,6 +2033,7 @@ input[type="radio"]:checked + label::after {
 	padding: 17px 19px;
 	background-color: rgba(229, 229, 229, 0.5);
 	border: none;
+	outline: none;
 	
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 14px;
@@ -2051,6 +2068,7 @@ input[type="radio"]:checked + label::after {
 	padding: 17px 19px;
 	background-color: rgba(229, 229, 229, 0.5);
 	border: none;
+	outline: none;
 	
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 14px;
@@ -2086,6 +2104,7 @@ input[type="radio"]:checked + label::after {
 	padding: 15px 19px;
 	background-color: rgba(229, 229, 229, 0.5);
 	border: none;
+	outline: none;
 	
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 14px;

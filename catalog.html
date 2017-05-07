@@ -3,11 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Моноподы для селфи</title>
+		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<header class="page-header container">
-			<a class="logo" href="#">
+			<a class="logo" href="index.html">
 				<img src="img/header-logo.png" width="164" height="36" alt="Девайс">
 			</a>
 
@@ -20,44 +21,43 @@
 							<input type="submit" value="Найти">
 						</form>
 					</div>
-					<ul class="user-menu">
-						<li class="user-item">
-							<a href="#">Войти</a>
-						</li>
-						<li class="user-item">
-							<a href="#">Сравнить</a>
-						</li>
-						<li class="user-item">
-							<a href="#">Корзина</a>
-						</li>
-					</ul>
+					<div class="user-menu">
+						<div class="float-left clearfix">
+							<a class="user-item user" href="#">Валентин Петухов</a>
+							<a class="logout" href="#">Выйти</a>
+						</div>
+						<div class="float-right clearfix">
+							<a class="user-item compare" href="#">Сравнить</a>
+							<a class="user-item cart" href="#">Корзина</a>
+						</div>
+					</div>
 				</div>
 
 				<!-- Вторая строка меню -->
 				<div class="header-row clearfix">
 					<ul class="header-menu">
-						<li class="catalog-item">
+						<li class="header-menu-item">
 							<a href="#">Каталог товаров</a>
-							<ul class="catalog-sub-list">
-								<li class="catalog-sub-item">
+							<ul class="menu-sub-list">
+								<li class="menu-sub-item">
 									<a href="#">Виртуальная реальность</a>
-									<a href="#">Моноподы для селфи</a>
+									<a href="catalog.html">Моноподы для селфи</a>
 									<a href="#">Экшн-камеры</a>
 								</li>
-								<li class="catalog-sub-item">
+								<li class="menu-sub-item">
 									<a href="#">Фитнес-браслеты</a>
 									<a href="#">Умные часы</a>
 								</li>
-								<li class="catalog-sub-item">
+								<li class="menu-sub-item">
 									<a href="#">Квадрокоптеры</a>
 								</li>
 							</ul>
 						</li>
 					</ul>
-					<div class="services-menu">
+					<div class="services-menu clearfix">
 						<a href="#">Доставка</a>
 						<a href="#">Гарантия</a>
-						<a class="float-right" href="#">Контакты</a>
+						<a href="#">Контакты</a>
 					</div>
 				</div>
 			</div>
@@ -70,7 +70,7 @@
 				<!-- Навигационная цепочка -->
 				<ul class="breadcrumbs">
 					<li class="breadcrumbs-item">
-						<a href="#">Главная</a>
+						<a href="index.html">Главная</a>
 					</li>
 					<li class="breadcrumbs-item">
 						<a href="#">Каталог товаров</a>
@@ -112,7 +112,7 @@
 							<input type="radio" id="bluetooth-no" name="bluetooth" value="no">
 							<label for="bluetooth-no">Нет</label>
 						</fieldset>
-						<input type="submit" value="Показать">
+						<span class="btn"><input type="submit" value="Показать"></span>
 					</form>
 				</div>
 			</div>
@@ -125,7 +125,7 @@
 						<h2 class="sorting-title">Сортировка:</h2>
 						<ul class="sorting-list">
 							<li class="sorting-item">
-								<a href="#">По цене</a>
+								<a class="active">По цене</a>
 							</li>
 							<li class="sorting-item">
 								<a href="#">По типу</a>
@@ -134,57 +134,57 @@
 								<a href="#">По популярности</a>
 							</li>
 						</ul>
-						<div class="sorting-arrows">
+						<div class="sorting-arrows clearfix">
 							<a class="ascend" href="#">По возростанию</a>
-							<a class="decrease" href="#">По убыванию</a>
+							<a class="decrease active">По убыванию</a>
 						</div>
 					</div>
 				</div>
 				<!-- Каталог -->
 				<div class="catalog-wrap">
 					<div class="catalog">
-						<article class="catalog-item">
+						<article class="catalog-item clearfix">
 							<div class="item-img">
 								<img src="img/catalog-item-1.jpg" width="360" height="380" alt="Изображение товара">
 								<div class="shop">
-									<a class="shopcart" href="#">В корзину</a>
+									<a class="btn shopcart" href="#">В корзину</a>
 									<a class="compare" href="#"> Добавить к сравнению</a>
 								</div>
 							</div>
-							<a href="#"><b>Любительская селфи-палка</b></a>
+							<a class="catalog-item-link" href="#"><b>Любительская селфи-палка</b></a>
 							<span class="price">500 руб.</span>
 						</article>
-						<article class="catalog-item">
+						<article class="catalog-item clearfix">
 							<div class="item-img">
 								<img src="img/catalog-item-2.jpg" width="360" height="380" alt="Изображение товара">
 								<div class="shop">
-									<a class="shopcart" href="#">В корзину</a>
+									<a class="btn shopcart" href="#">В корзину</a>
 									<a class="compare" href="#"> Добавить к сравнению</a>
 								</div>
 							</div>
-							<a href="#"><b>Профессиональная селфи-палка</b></a>
+							<a class="catalog-item-link" href="#"><b>Профессиональная селфи-палка</b></a>
 							<span class="price">1 500 руб.</span>
 						</article>
-						<article class="catalog-item">
+						<article class="catalog-item clearfix">
 							<div class="item-img">
 								<img src="img/catalog-item-3.jpg" width="360" height="380" alt="Изображение товара">
 								<div class="shop">
-									<a class="shopcart" href="#">В корзину</a>
+									<a class="btn shopcart" href="#">В корзину</a>
 									<a class="compare" href="#"> Добавить к сравнению</a>
 								</div>
 							</div>
-							<a href="#"><b>Непотопляемая селфи-палка</b></a>
+							<a class="catalog-item-link" href="#"><b>Непотопляемая селфи-палка</b></a>
 							<span class="price">2 500 руб.</span>
 						</article>
-						<article class="catalog-item item-new">
-							<div class="item-img">
+						<article class="catalog-item clearfix item-new">
+							<div class="item-img new">
 								<img src="img/catalog-item-4.jpg" width="360" height="380" alt="Изображение товара">
 								<div class="shop">
-									<a class="shopcart" href="#">В корзину</a>
+									<a class="btn shopcart" href="#">В корзину</a>
 									<a class="compare" href="#"> Добавить к сравнению</a>
 								</div>
 							</div>
-							<a href="#"><b>Селфи-палка «Следуй за мной»</b></a>
+							<a class="catalog-item-link" href="#"><b>Селфи-палка &laquo;Следуй за мной&raquo;</b></a>
 							<span class="price">4 900 руб.</span>
 						</article>
 					</div>
@@ -192,7 +192,7 @@
 					<!-- Переключатель страниц -->
 					<div class="paginator clearfix">
 						<a class="prev" href="#">Назад</a>
-						<a href="#">1</a>
+						<a class="active">1</a>
 						<a href="#">2</a>
 						<a href="#">3</a>
 						<a class="next" href="#">Вперед</a>
@@ -204,18 +204,18 @@
 		<footer class="page-footer">
 			<!-- Первая строка -->
 			<div class="footer-row container clearfix">
-				<a class="footer-logo">
+				<a class="footer-logo" href="index.html">
 					<img src="img/footer-logo.png" width="163" height="36" alt="Девайс">
 				</a>
 				<ul class="footer-user-menu">
 					<li class="footer-user-item">
-						<a href="#">Войти</a>
+						<a class="logout" href="#">Выйти</a>
 					</li>
 					<li class="footer-user-item">
-						<a href="#">Сравнить</a>
+						<a class="compare" href="#">Сравнить</a>
 					</li>
 					<li class="footer-user-item">
-						<a href="#">Корзина</a>
+						<a class="cart" href="#">Корзина</a>
 					</li>
 				</ul>
 			</div>

@@ -4,6 +4,10 @@ var closeMapBtn = document.querySelector(".js-close-map");
 var writeUsBtn = document.querySelector(".js-write-us");
 var writeUsPopup = document.querySelector(".popup-write-us");
 var closeWriteUsBtn = document.querySelector(".js-close-write-us");
+var form = document.querySelector(".popup-write-us form");
+var username = document.querySelector(".popup-name input");
+var email = document.querySelector(".popup-email input");
+var emailText = document.querySelector(".popup-text textarea");
 
 mapBtn.addEventListener("click", function(evt) {
 	evt.preventDefault();
@@ -34,4 +38,32 @@ window.addEventListener("keydown", function(evt) {
 			mapPopup.classList.remove("popup-show");
 		}
 	}
+});
+
+function removeFormError() {
+	if (username.classList.contains("form-error")) {
+		username.classList.remove("form-error");
+	}
+	if (email.classList.contains("form-error")) {
+		email.classList.remove("form-error");
+	}
+	if (emailText.classList.contains("form-error")) {
+		emailText.classList.remove("form-error");
+	}
+}
+
+form.addEventListener("submit", function(evt) {
+	if (!username.value) {
+		evt.preventDefault();
+		username.classList.add("form-error");
+	}
+	if (!email.value) {
+		evt.preventDefault();
+		email.classList.add("form-error");
+	}
+	if (!emailText.value) {
+		evt.preventDefault();
+		emailText.classList.add("form-error");
+	}
+	setTimeout(removeFormError, 1000);
 });

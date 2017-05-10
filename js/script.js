@@ -1,4 +1,4 @@
-var mapBtn = document.querySelector(".js-map");
+var mapBtn = document.querySelector(".map");
 var mapPopup = document.querySelector(".popup-map");
 var closeMapBtn = document.querySelector(".js-close-map");
 var writeUsBtn = document.querySelector(".js-write-us");

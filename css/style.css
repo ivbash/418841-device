@@ -1054,34 +1054,12 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 }
 
 .map {
-	position: relative;
+	display: block;
 	width: 560px;
 	height: 222px;
 	margin-top: 37px;
 	margin-bottom: 82px;
-	line-height: 0;
 	background-color: #eaeaea;
-}
-
-.map iframe {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-}
-
-.map a {
-	display: block;
-	position: absolute;
-	z-index: 1;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
 }
 
 .company .btn {
@@ -1591,25 +1569,15 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 }
 
 .new::before {
-	content: "New";
+	content: "";
 	display: block;
 	position: absolute;
 	top: 28px;
-	right: 27px;
-	width: 56px;
-	height: 37px;
-	padding-top: 19px;
-	border: 2px solid rgba(0, 0, 0, 0.1);
-	border-radius: 50%;
-	
-	font-family: "Gilroy", "Arial", sans-serif;
-	font-size: 14px;
-	font-weight: 800;
-	line-height: normal;
-	letter-spacing: 0.05em;
-	color: rgba(0, 0, 0, 0.2);
-	text-transform: uppercase;
-	text-align: center;
+	right: 25px;
+	width: 62px;
+	height: 62px;
+	background: url("../img/sprite.png") no-repeat 0 -305px;
+	opacity: 0.2;
 }
 
 .shop {
@@ -1783,6 +1751,7 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	position: relative;
 	margin-top: 42px;
 	padding-top: 5px;
+	padding-bottom: 10px;
 }
 
 .footer-row:last-child::before {
@@ -1872,7 +1841,7 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 }
 
 .footer-user-item .login::before {
-	left: 2px;
+	left: 3px;
 	top: 13px;
 	background: url("../img/sprite.png") no-repeat 0 -47px;
 }

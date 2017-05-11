@@ -25,7 +25,6 @@
 body {
 	margin: 0;
 	padding: 0;
-	
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
@@ -58,7 +57,6 @@ body {
 	position: relative;
 	z-index: 1;
 	width: 200px;
-	
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 18px;
 	font-weight: 800;
@@ -97,7 +95,6 @@ body {
 	height: 40px;
 	background: none;
 	border: none;
-	
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 18px;
 	font-weight: 800;
@@ -107,13 +104,12 @@ body {
 	color: inherit;
 }
 
-.btn input:active { /* IE10 */
+.btn input:active {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-
-/* header */
-.index-header, .page-header {
+.index-header,
+.page-header {
 	padding-top: 20px;
 	padding-bottom: 15px;
 	background-image: linear-gradient(rgba(240, 197, 46, 0.5), rgba(240, 197, 46, 0.5));
@@ -135,11 +131,10 @@ body {
 	opacity: 0.6;
 }
 
-.logo img:active { /* IE10 */
+.logo img:active {
 	opacity: 0.3;
 }
 
-/* Меню в шапке */
 .header-menu-wrap {
 	margin: 0 60px;
 	padding-bottom: 23px;
@@ -149,7 +144,6 @@ body {
 	margin-bottom: 15px;
 }
 
-/* Первая строка */
 .header-search {
 	float: left;
 	width: 440px;
@@ -175,12 +169,11 @@ body {
 
 .search-field {
 	width: 180px;
-	min-height: 36px; /* IE10 */
+	min-height: 36px;
 	padding: 7px 15px 4px 40px;
 	background-color: transparent;
 	border: none;
 	outline: none;
-	
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
@@ -272,7 +265,6 @@ body {
 	padding: 4px 18px;
 	background-color: transparent;
 	border: 2px solid #000;
-	
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
@@ -296,7 +288,6 @@ body {
 	width: 500px;
 	margin: 0;
 	padding: 0;
-	
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
@@ -398,7 +389,6 @@ body {
 	width: 220px;
 }
 
-/* Вторая строка */
 .header-menu {
 	position: relative;
 	float: left;
@@ -406,7 +396,6 @@ body {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 18px;
 	font-weight: 800;
@@ -475,7 +464,6 @@ body {
 .menu-sub-item a {
 	display: block;
 	text-decoration: none;
-	
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
@@ -492,7 +480,6 @@ body {
 .services-menu {
 	float: right;
 	width: 500px;
-	
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 18px;
 	font-weight: 800;
@@ -524,8 +511,6 @@ body {
 	opacity: 0.3;
 }
 
-
-/* Слайдер в шапке */
 .slides-wrap {
 	position: relative;
 	margin: 0;
@@ -630,7 +615,6 @@ body {
 	right: 45px;
 	top: -15px;
 	z-index: -1;
-	
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 179px;
 	font-weight: 800;
@@ -656,7 +640,6 @@ body {
 .slides-wrap .slide-title {
 	margin: 0;
 	margin-bottom: 18px;
-	
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 47px;
 	font-weight: 800;
@@ -668,7 +651,6 @@ body {
 .slides-wrap .slide-description {
 	margin: 0;
 	padding-right: 78px;
-	
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
@@ -691,7 +673,6 @@ body {
 
 .feature-item {
 	float: left;
-	
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 13px;
 	font-weight: 300;
@@ -711,7 +692,6 @@ body {
 .feature-item b {
 	display: block;
 	margin-bottom: 10px;
-	
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 36px;
 	font-weight: 300;
@@ -720,9 +700,6 @@ body {
 	color: #000;
 }
 
-
-/* main-index */
-/* Блок навигации */
 .catalog-list {
 	margin-top: 76px;
 	margin-bottom: 75px;
@@ -735,7 +712,6 @@ body {
 	width: 160px;
 	margin-right: 40px;
 	vertical-align: top;
-	
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 18px;
 	font-weight: 800;
@@ -745,7 +721,7 @@ body {
 	text-decoration: none;
 }
 
-.catalog-list .catalog-item:last-child {
+.catalog-list .catalog-item:nth-child(6n) {
 	margin-right: -5px;
 }
 
@@ -804,7 +780,6 @@ body {
 	background: url("../img/nav-quadrocopter.png") no-repeat center;
 }
 
-/* Слайдер сервисов */
 .services-slides-wrap {
 	margin-bottom: 92px;
 	padding-top: 10px;
@@ -853,7 +828,6 @@ body {
 .services-slides-wrap .slide-title {
 	margin: 0;
 	margin-bottom: 25px;
-	
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 47px;
 	font-weight: 800;
@@ -864,7 +838,6 @@ body {
 
 .services-slides-wrap .slide-description {
 	margin: 0;
-	
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
@@ -893,7 +866,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	display: block;
 }
 
-/* trademarks */
 .trademarks {
 	margin-bottom: 90px;
 	font-size: 0;
@@ -955,7 +927,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	opacity: 1;
 }
 
-/* Контактная информация */
 .company {
 	padding-bottom: 17px;
 }
@@ -999,7 +970,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 
 .title {
 	margin: 39px 0 37px;
-	
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 47px;
 	font-weight: 800;
@@ -1011,7 +981,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 .description {
 	margin: 32px 0;
 	padding-right: 5px;
-	
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
@@ -1025,7 +994,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	padding: 0;
 	padding-left: 35px;
 	list-style: none;
-	
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 16px;
 	font-weight: 800;
@@ -1054,23 +1022,42 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 }
 
 .map {
-	display: block;
+	position: relative;
 	width: 560px;
 	height: 222px;
 	margin-top: 37px;
 	margin-bottom: 82px;
+	line-height: 0;
 	background-color: #eaeaea;
+}
+
+.map iframe {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.map a {
+	display: block;
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .company .btn {
 	width: 260px;
 }
 
-
-/* main-catalog */
 .page-title {
 	margin: 0 0 15px 60px;
-	
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 47px;
 	font-weight: 800;
@@ -1095,7 +1082,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	display: block;
 	position: relative;
 	padding-right: 25px;
-	
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 14px;
 	font-weight: 300;
@@ -1128,7 +1114,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	color: rgba(0, 0, 0, 0.1);
 }
 
-/* Фильтр */
 .filter-container {
 	float: left;
 	width: calc(50% - 252px);
@@ -1154,7 +1139,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	width: 200px;
 	margin: 0;
 	margin-right: 68px;
-	
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 16px;
 	font-weight: 800;
@@ -1187,7 +1171,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	position: absolute;
 	left: 0;
 	top: 11px;
-	
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 18px;
 	font-weight: 800;
@@ -1271,13 +1254,12 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 .min-price input {
 	box-sizing: border-box;
 	width: 50px;
-	height: 30px; /* IE10 */
+	height: 30px;
 	margin: 0;
 	padding: 0;
 	background: none;
 	border: none;
 	outline: none;
-	
 	font: inherit;
 	line-height: inherit;
 	letter-spacing: inherit;
@@ -1296,13 +1278,12 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 .max-price input {
 	box-sizing: border-box;
 	width: 50px;
-	height: 30px; /* IE10 */
+	height: 30px;
 	margin: 0;
 	padding: 0;
 	background: none;
 	border: none;
 	outline: none;
-	
 	font: inherit;
 	line-height: inherit;
 	letter-spacing: inherit;
@@ -1320,7 +1301,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	max-width: 164px;
 	padding-left: 41px;
 	word-wrap: break-word;
-	
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 14px;
 	font-weight: 300;
@@ -1398,7 +1378,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	margin-left: 5px;
 }
 
-/* Каталог */
 .catalog-container {
 	float: right;
 	width: calc(50% + 252px);
@@ -1421,7 +1400,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	vertical-align: top;
 	margin: 0;
 	margin-right: 56px;
-	
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 16px;
 	font-weight: 800;
@@ -1448,7 +1426,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 
 .sorting-item a {
 	display: block;
-	
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 14px;
 	font-weight: 400;
@@ -1483,7 +1460,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	position: relative;
 	float: left;
 	width: 20px;
-	
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
@@ -1515,7 +1491,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	position: relative;
 	float: right;
 	width: 20px;
-	
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
@@ -1597,6 +1572,7 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+	cursor: pointer;
 }
 
 .shop .compare {
@@ -1605,7 +1581,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	left: 50%;
 	top: 62%;
 	transform: translate(-50%, -50%);
-	
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 13px;
 	font-weight: 300;
@@ -1613,6 +1588,7 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	letter-spacing: 0.01em;
 	color: rgba(0, 0, 0, 0.5);
 	text-decoration: none;
+	cursor: pointer;
 }
 
 .shop .compare:hover {
@@ -1640,7 +1616,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	display: inline-block;
 	vertical-align: top;
 	width: 259px;
-	
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 18px;
 	font-weight: 800;
@@ -1657,7 +1632,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	width: 100px;
 	margin-top: 3px;
 	text-align: right;
-	
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 16px;
 	font-weight: 300;
@@ -1673,7 +1647,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	margin-bottom: 0;
 }
 
-/* Переключатель страниц */
 .paginator {
 	background-color: rgba(0, 0, 0, 0.08);
 	text-align: center;
@@ -1685,7 +1658,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	vertical-align: top;
 	margin-left: 16px;
 	padding: 25px 6px;
-	
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 16px;
 	font-weight: 800;
@@ -1733,8 +1705,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-
-/* footer */
 .page-footer {
 	min-width: 1200px;
 	padding-top: 60px;
@@ -1765,7 +1735,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	background-color: #ffc600;
 }
 
-/* Первая строка */
 .footer-logo {
 	float: left;
 	width: 163px;
@@ -1794,7 +1763,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	display: inline-block;
 	vertical-align: top;
 	margin-left: 32px;
-	
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
@@ -1864,12 +1832,10 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	background: url("../img/sprite.png") no-repeat 0 -107px;
 }
 
-/* Вторая строка */
 .address {
 	float: left;
 	width: 260px;
 	margin: 5px 100px 0 0;
-	
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
@@ -1891,7 +1857,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	display: inline-block;
 	vertical-align: top;
 	margin-right: 34px;
-	
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 18px;
 	font-weight: 800;
@@ -1925,7 +1890,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	width: 260px;
 	margin: 0;
 	margin-top: 5px;
-	
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
 	font-weight: 300;
@@ -1935,7 +1899,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	text-align: right;
 }
 
-/* Третья строка */
 .social-list {
 	float: left;
 	width: 200px;
@@ -1996,7 +1959,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	height: 34px;
 	margin-top: 4px;
 	background: url("../img/htmlacademy.png") no-repeat;
-	
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
@@ -2010,8 +1972,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	opacity: 0.3;
 }
 
-
-/* popup */
 .popup-map {
 	display: none;
 	position: fixed;
@@ -2088,7 +2048,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 .popup-write-us label {
 	display: block;
 	padding-bottom: 10px;
-	
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 18px;
 	font-weight: 800;
@@ -2110,7 +2069,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	background-color: rgba(229, 229, 229, 0.5);
 	border: none;
 	outline: none;
-	
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 14px;
 	font-weight: 400;
@@ -2145,7 +2103,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	background-color: rgba(229, 229, 229, 0.5);
 	border: none;
 	outline: none;
-	
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 14px;
 	font-weight: 400;
@@ -2181,7 +2138,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	background-color: rgba(229, 229, 229, 0.5);
 	border: none;
 	outline: none;
-	
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 14px;
 	font-weight: 400;

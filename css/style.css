@@ -1080,8 +1080,14 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 	color: rgba(0, 0, 0, 0.1);
 }
 
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .filter-container {
-	float: left;
+	display: flex;
+	flex-direction: column;
 	width: calc(50% - 252px);
 	background-color: #efefef;
 	margin-bottom: -74px;
@@ -1089,19 +1095,20 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 }
 
 .filter-wrap {
-	float: right;
+	align-self: flex-end;
 	width: 205px;
 	margin-right: 68px;
 	padding-top: 69px;
 }
 
 .filter-title-container {
+	display: flex;
+	justify-content: flex-end;
 	padding: 24px 0 27px;
 	background-color: #dcdcdc;
 }
 
 .filter-title {
-	float: right;
 	width: 200px;
 	margin: 0;
 	margin-right: 68px;
@@ -1345,7 +1352,6 @@ input[id="credit"]:checked ~ [class*="slide-credit"] {
 }
 
 .catalog-container {
-	float: right;
 	width: calc(50% + 252px);
 }
 

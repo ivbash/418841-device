@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>Моноподы для селфи</title>
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.min.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<header class="page-header container">
@@ -12,25 +12,19 @@
 				<img src="img/header-logo.png" width="164" height="36" alt="Девайс">
 			</a>
 			<div class="header-menu-wrap">
-				<div class="header-row clearfix">
-					<div class="header-search">
-						<form class="search" action="https://echo.htmlacademy.ru" method="get">
-							<input class="search-field" type="text" name="search-field" placeholder="Поиск по сайту">
-							<input class="search-btn" type="submit" value="Найти">
-						</form>
+				<div class="header-row">
+					<form class="search" action="https://echo.htmlacademy.ru" method="get">
+						<input class="search-field" type="text" name="search-field" placeholder="Поиск по сайту">
+						<input class="search-btn" type="submit" value="Найти">
+					</form>
+					<div class="user-block">
+						<a class="user-item user" href="#">Валентин Петухов</a>
+						<a class="logout" href="#">Выйти</a>
 					</div>
-					<div class="user-menu">
-						<div class="float-left clearfix">
-							<a class="user-item user" href="#">Валентин Петухов</a>
-							<a class="logout" href="#">Выйти</a>
-						</div>
-						<div class="float-right clearfix">
-							<a class="user-item compare" href="#">Сравнить</a>
-							<a class="user-item cart" href="#">Корзина</a>
-						</div>
-					</div>
+					<a class="user-item compare" href="#">Сравнить</a>
+					<a class="user-item cart" href="#">Корзина</a>
 				</div>
-				<div class="header-row clearfix">
+				<div class="header-row">
 					<ul class="header-menu">
 						<li class="header-menu-item">
 							<a href="#">Каталог товаров</a>
@@ -50,7 +44,7 @@
 							</ul>
 						</li>
 					</ul>
-					<div class="services-menu clearfix">
+					<div class="services-menu">
 						<a href="#">Доставка</a>
 						<a href="#">Гарантия</a>
 						<a href="#">Контакты</a>
@@ -198,7 +192,7 @@
 			</div>
 		</main>
 		<footer class="page-footer">
-			<div class="footer-row container clearfix">
+			<div class="footer-row container">
 				<a class="footer-logo" href="index.html">
 					<img src="img/footer-logo.png" width="163" height="36" alt="Девайс">
 				</a>
@@ -214,7 +208,7 @@
 					</li>
 				</ul>
 			</div>
-			<div class="footer-row container clearfix">
+			<div class="footer-row container">
 				<p class="address">г. Москва, ул. Строителей, 15</p>
 				<ul class="footer-services-list">
 					<li class="footer-services-item">
@@ -229,7 +223,7 @@
 				</ul>
 				<p class="tel">Тел.: +7 (495) 495-95-95</p>
 			</div>
-			<div class="footer-row container clearfix">
+			<div class="footer-row container">
 				<ul class="social-list">
 					<li class="social-item">
 						<a class="social-btn social-fb" target="_blank" href="#">Facebook</a>
